@@ -2,7 +2,16 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 public class HelloTest {
-
+        /*
+            static method @BeforeAll is running
+            @BeforeEach is running
+            Test1 is running
+            @AfterEach is running
+            @BeforeEach is running
+            Test2 is running
+            @AfterEach is running
+            static method AfterAll is running
+         */
 
     @BeforeAll
     public static void setUp(){
