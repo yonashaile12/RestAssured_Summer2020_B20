@@ -1,4 +1,8 @@
+package day01;
+
+
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 public class HelloTest {
@@ -11,7 +15,7 @@ public class HelloTest {
             Test2 is running
             @AfterEach is running
             static method AfterAll is running
-         */
+          */
 
     @BeforeAll
     public static void setUp(){
@@ -31,7 +35,7 @@ public class HelloTest {
     public void afterEach(){
         System.out.println("@AfterEach is running");
     }
-    @Test
+    @org.junit.jupiter.api.Test
     public void test(){
         Assertions.assertEquals(4, 3+1);
         System.out.println("Test1 is running");
